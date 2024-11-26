@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Modo Dark Mode
     const darkModeButton = document.createElement("button");
     darkModeButton.textContent = "Modo Dark";
     darkModeButton.classList.add("dark-mode-btn");
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle("dark-mode");
     });
 
-    // Fade-in ao carregar as imagens
     const images = document.querySelectorAll(".card img");
     images.forEach((img) => {
         img.style.opacity = "0";
@@ -24,13 +22,11 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
-        // Ao passar o mouse (hover)
         card.addEventListener("mouseover", () => {
             card.style.transform = "scale(1.1)";
-            card.style.transition = "transform 0.3s ease"; // Adiciona suavidade
+            card.style.transition = "transform 0.3s ease";
         });
 
-        // Ao retirar o mouse
         card.addEventListener("mouseout", () => {
             card.style.transform = "scale(1)";
         });
