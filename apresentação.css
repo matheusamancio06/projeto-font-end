@@ -1,0 +1,111 @@
+/* Reset Básico */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+/* Seção dos Integrantes */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.member {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    width: 100%;
+    height: 65%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member h2 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.member p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.dark-mode-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #6a11cb, #0077b6);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0077b6, #6a11cb);
+}
+
+.dark-mode-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.dark-mode {
+    background-color: #0e0909;
+    color: #eee;
+}
+

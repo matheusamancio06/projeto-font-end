@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário de Cadastro</h1>
+        <section class="form-container">
+            <form id="registration-form">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="contact">Número de Contato</label>
+                <input type="tel" id="contact" name="contact" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="message">Sua opinião</label>
+                <textarea id="message" name="message" placeholder="Deixe sua opinião sobre o site..." rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
